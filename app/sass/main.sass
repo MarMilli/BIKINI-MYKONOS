@@ -91,13 +91,21 @@ h1, h2
   width: 672.8px
   height: 25px
   font-family: FuturaPT
-  font-size: 1.0rem
+  font-size: 1.1rem
   font-weight: 500
   font-style: normal
   font-stretch: normal
   line-height: 2.5
   letter-spacing: 4px
   color: $black-two
+  text-transform: uppercase
+.menuMain__items li
+  border-bottom: 1.5px solid transparent
+
+.menuMain__items li:hover
+  border-bottom: 1.5px solid black
+//transition: all 200ms linear
+//transform: scale(1.1)
 
 .header__logo
   width: 37.5px
@@ -111,18 +119,20 @@ h1, h2
   color: $black
   margin-right: 47px
   line-height: 0.8
+  text-transform: uppercase
 
 .cart__link
   display: flex
   flex-flow: row nowrap
   justify-content: space-around
   align-items: center
+  text-transform: uppercase
 
 .cart__name
   width: 51px
   height: 25px
   font-family: FuturaPT
-  font-size: 1.0rem
+  font-size: 1.1rem
   font-weight: 500
   font-style: normal
   font-stretch: normal
@@ -130,12 +140,13 @@ h1, h2
   letter-spacing: 4px
   color: $black
 
+
 .cart__value
   display: flex
   justify-content: center
   align-items: center
   font-family: FuturaPT
-  font-size: 1.0rem
+  font-size: 1.1rem
   font-weight: 500
   width: 32px
   height: 32px
@@ -143,7 +154,9 @@ h1, h2
   border: solid 1px $black
   border-radius: 100%
 
-
+input.cart__value
+  text-align: center
+  letter-spacing: normal
 
 .order__select
   max-width: 1142px
@@ -173,8 +186,8 @@ h1, h2
   max-width: 620px
   width: 50%
   position: absolute
-  top: 130px
-  right: 150px
+  top: calc(50% - 325px)
+  left: calc( 60% - 212px)
 
 
 .slick-slide img 
@@ -191,16 +204,17 @@ h1, h2
   text-align: right
   color: #000000
   margin-top: 70px
-  border-bottom: 21px solid transparent
+  border-bottom: 1.5px solid transparent
   cursor: pointer
   background: transparent
+  text-transform: uppercase
 
 .slider-nav .slickSlide.slick-center
   display: inline-block
-  border-bottom: 2px solid black
+  border-bottom: 1.5px solid black
 
 .slickSlider .slider-nav
-  height: 205px
+  height: 210px
   width: 300px
   overflow: hidden
   position: absolute
@@ -225,6 +239,7 @@ h1, h2
   font-weight: 500
   letter-spacing: 12px
   color: #000000
+  text-transform: uppercase
 
 h2
   font-family: FuturaPT
@@ -232,6 +247,7 @@ h2
   font-weight: 500
   letter-spacing: 12px
   color: #000000
+  text-transform: uppercase
 
 
 .description
@@ -247,35 +263,26 @@ h2
   max-width: 450px
   margin-right: 150px
   z-index: 1
+  width: 40%
 
 .wrapSelect
   max-width: 300px
-  width: 90%
-  border-bottom: 2px solid black
-  display: flex
-  flex-direction: row
-  justify-content: space-between
-  align-items: center
+  width: 60%
+  border-bottom: 1.5px solid black
   line-height: 2.17
   letter-spacing: 4px
   color: #0b0b0b
-  position: relative
 
 
 .select_block
-  height: 30px
-  box-sizing: border-box
-  display: inline-block
   width: 100%
-  margin-bottom: 0px
   position: relative
   cursor: pointer
-  vertical-align: top
   padding: 0 13px
 
 .select_field 
   display: flex
-  justify-content: space-between
+  flex-flow: row nowrap
   align-items: center
 
 .select_field .select_arrow 
@@ -298,23 +305,11 @@ input
   cursor: pointer
   font-family: FuturaPT-Demi
   font-size: 12px
-  
-
-label 
-  overflow: hidden
-  display: block
-  margin-bottom: 2px
-
-label.label 
-  position: absolute
-  top: 0
-  left: 13px
-  z-index: 10
-  cursor: pointer
+  text-transform: uppercase
+  width: 90%
 
 .select_fall_out 
   display: none
-  box-sizing: border-box
   width: 100%
   padding: 0
   position: absolute
@@ -323,30 +318,13 @@ label.label
   background: #f3dfcd
   z-index: 1
 
-.select_fall_out.open 
-  border: 1px solid #d9d9d9
-
-
 .select_fall_out span 
   display: block
-  overflow: hidden
-  white-space: nowrap
-  box-sizing: border-box
-  height: 46px
-  margin: 0px 0px
   padding: 12px 13px 
   cursor: pointer
-  overflow: hidden
 
-/*.select_vp span.active,*/
 .select_fall_out span:hover 
   background: #eea35d
-
-.select_fall_out span:first-child 
-  margin-top: 0px
-
-.select_fall_out span:last-child 
-  margin-bottom: 0px
 
 .wrapAddCart
   display: flex
@@ -355,6 +333,10 @@ label.label
   align-items: center
   font-family: FuturaPT-Demi
   font-size: 12px
+  text-transform: uppercase
+
+input.quantity
+  text-align: center
 
 .count_minus, .count_plus 
   width: 35px
@@ -376,7 +358,7 @@ label.label
 .addCard
   width: 211px
   height: 41px
-  border: 3px solid black
+  border: 1.5px solid black
   position: relative
   background: transparent
   line-height: 2.08
@@ -388,12 +370,16 @@ label.label
   cursor: pointer
   font-family: FuturaPT-Demi
   font-size: 12px
+  text-transform: uppercase
+  overflow: visible
+
+
 
 .addCard::after
   content: ''
   width: 211px
   height: 41px
-  border: 3px solid black
+  border: 1.5px solid black
   position: absolute
   top: 7px
   left: 7px
@@ -476,12 +462,15 @@ label.label
   background: url(../img/design/rectangle-4.png)
   background-size: cover
   z-index: -1
+
 .separator_wrap
   position: absolute
-  top: 715px
-  left: -35px
-.separator
+  top: 0
+  left: calc(50% - 38px)
   transform: rotate(-90deg)
+  transform-origin: 750px 750px
+
+.separator
   width: 1500px
   height: 76px
   font-family: FuturaPT
@@ -494,6 +483,7 @@ label.label
   justify-content: space-between
   align-items: center
   position: relative
+  text-transform: uppercase
 
 .sectionInform_wrap
   position: relative
@@ -521,3 +511,127 @@ label.label
   position: absolute
   left: 0
   top: 0
+
+.slider3D .slick-track
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  padding: 100px 0
+
+.sectionSlider_wrap
+  width: 100%
+  padding: 80px 0
+  text-align: center
+
+.sectionSlider
+  width: 80%
+  margin: 40px auto
+
+
+.slider3D .slick-slide img
+  width: 100%
+  height: auto
+  margin: 100px 0
+
+.slider3D .slick-slide.slick-current img
+  width: 100%
+  height: auto
+  margin: 0
+
+
+
+
+.slider3D .slickSlide__img
+  text-align: center
+  max-width: 180px
+  width: 45%
+  height: auto
+  margin: 0 auto
+  filter: grayscale(100%)
+  transition: all 300ms linear
+  cursor: pointer
+
+
+.slider3D .slick-current .slickSlide__img
+  transform: scale(2)
+  filter: grayscale(0%)
+  cursor: default
+  position: relative
+  z-index: 1
+
+
+.slider3D .slick-list
+  position: relative
+
+.slider3D .slick-list:before
+  content: ''
+  position: absolute
+  top: 0
+  left: calc( 50% - 370px)
+  width: 743px
+  height: 100%
+  background: #eea35d
+  z-index: -1
+  opacity: 0.4
+
+
+.slider3D .slick-active:not(.slick-current) .slickSlide__img
+  opacity: 0.6
+
+.slider3D .slick-center
+  position: relative
+
+.slider3D .slick-center:before
+  content: ''
+  position: absolute
+  top: 50%
+  left: -20%
+  max-width: 150px
+  width: 50%
+  height: 1.5px
+  background: black
+  z-index: 2
+  //border-bottom: 1.5px solid black
+
+.slider3D .slick-center:after
+  content: ''
+  position: absolute
+  top: 50%
+  right: -20%
+  max-width: 150px
+  width: 50%
+  height: 1.5px
+  background: black
+  z-index: 2
+  //border-bottom: 1.5px solid black
+
+.footer
+  font-family: FuturaPT
+  padding: 20px 0
+
+.footerInfo
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 0 40px
+
+.block__copyright
+  font-size: 1.5rem
+  font-weight: 500
+  letter-spacing: 4px
+  color: #000000
+
+.block__contact
+
+  width: 15%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  font-size: 1.8rem
+
+.block__contact a
+  transition: all 200ms linear
+
+.block__contact a:hover
+  transform: scale(1.5)

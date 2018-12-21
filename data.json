@@ -1,0 +1,96 @@
+[{
+  "alt": "IMG 001",
+  "url": "img/rectangle_3.png",
+  "color": [{
+    "name": "PICK A COLOR",
+    "linkImage": "PICK A COLOR"},
+    {
+      "name": "BLUE",
+      "linkImage": "img/rectangle_3_BLUE.png"},
+    {
+      "name": "GREEN",
+      "linkImage": "img/rectangle_3_GREEN.png"},
+    {
+      "name": "WHITE",
+      "linkImage": "img/rectangle_3.png"},
+    {
+      "name": "PINK",
+      "linkImage": "img/rectangle_3_PINK.png"}
+  ]
+}, {
+  "alt": "IMG 002",
+  "url": "img/rectangle_3.png",
+  "color": [{
+    "name": "PICK A COLOR",
+    "linkImage": "PICK A COLOR"},
+    {
+      "name": "BLUE",
+      "linkImage": "img/rectangle_3_BLUE.png"},
+    {
+      "name": "GREEN",
+      "linkImage": "img/rectangle_3_GREEN.png"},
+    {
+      "name": "WHITE",
+      "linkImage": "img/rectangle_3.png"}
+  ]
+},{
+  "alt": "IMG 003",
+  "url": "img/rectangle_3.png",
+  "color": [{
+    "name": "PICK A COLOR",
+    "linkImage": "PICK A COLOR"},
+    {
+      "name": "BLUE",
+      "linkImage": "img/rectangle_3_BLUE.png"},
+    {
+      "name": "GREEN",
+      "linkImage": "img/rectangle_3_GREEN.png"},
+    {
+      "name": "WHITE",
+      "linkImage": "img/rectangle_3.png"},
+    {
+      "name": "PINK",
+      "linkImage": "img/rectangle_3_PINK.png"}
+  ]
+},{
+  "alt": "IMG 004",
+  "url": "img/rectangle_3.png",
+  "color": [{
+    "name": "PICK A COLOR",
+    "linkImage": "PICK A COLOR"},
+    {
+      "name": "BLUE",
+      "linkImagek": "img/rectangle_3_BLUE.png"},
+    {
+      "name": "GREEN",
+      "linkImage": "img/rectangle_3_GREEN.png"},
+    {
+      "name": "WHITE",
+      "linkImage": "img/rectangle_3.png"},
+    {
+      "name": "PINK",
+      "linkImage": "img/rectangle_3_PINK.png"}
+  ]
+},{
+  "alt": "IMG 005",
+  "url": "img/rectangle_3.png",
+  "color": [
+    {
+      "name": "PICK A COLOR",
+      "linkImage": "PICK A COLOR"},
+    {
+      "name": "BLUE",
+      "linkImage": "img/rectangle_3_BLUE.png"},
+    {
+      "name": "GREEN",
+      "linkImage": "img/rectangle_3_GREEN.png"},
+    {
+      "name": "WHITE",
+      "linkImage": "img/rectangle_3.png"},
+    {
+      "name": "PINK",
+      "linkImage": "img/rectangle_3_PINK.png"}
+  ]
+}
+]
+
